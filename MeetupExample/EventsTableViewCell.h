@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Event.h"
 
-@interface UpcomingEventsTableCell : UITableViewCell
+@interface EventsTableViewCell : UITableViewCell
 
 @property (nonatomic, strong) Event *event;
 @property (nonatomic, weak) IBOutlet UILabel *dayLabel;

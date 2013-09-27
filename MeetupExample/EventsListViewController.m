@@ -6,15 +6,17 @@
 //  Copyright (c) 2013 Keen Code. All rights reserved.
 //
 
-#import "UpcomingEventsViewController.h"
+#import "EventsListViewController.h"
 #import "Event+NetworkHelper.h"
-#import "UpcomingEventsTableCell.h"
+#import "EventsTableViewCell.h"
 
-@interface UpcomingEventsViewController ()
+NSString * const kEventsListViewControllerID = @"EventsListViewController";
+
+@interface EventsListViewController ()
 
 @end
 
-@implementation UpcomingEventsViewController
+@implementation EventsListViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -57,8 +59,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"UpcomingEventsTableCell";
-    UpcomingEventsTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"EventsTableViewCell";
+    EventsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     Event *event = [self.events objectAtIndex:indexPath.row];
     cell.event = event;

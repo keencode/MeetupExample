@@ -20,6 +20,10 @@ typedef enum {
 + (void)getUpcomingEventsOnSuccess:(void (^)(NSArray *events))successBlock
                          onFailure:(void (^)(NSError *error))errorBlock;
 
++ (void)searchUpcomingEventsWithTerms:(NSDictionary *)searchTerms
+                             onSuccess:(void (^)(NSArray *events))successBlock
+                             onFailure:(void (^)(NSError *error))errorBlock;
+
 + (void)eventsFromResponse:(NSDictionary *)response
                  onSuccess:(void (^)(NSArray *events))successBlock
                  onFailure:(void (^)(NSError *error))errorBlock;

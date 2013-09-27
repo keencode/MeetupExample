@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UpcomingEventsViewController : UITableViewController
+extern NSString * const kEventsListViewControllerID;
+
+@interface EventsListViewController : UITableViewController
 
 @property (nonatomic, strong) NSArray *events;
 

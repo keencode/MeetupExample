@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Keen Code. All rights reserved.
 //
 
-#import "UpcomingEventsTableCell.h"
+#import "EventsTableViewCell.h"
 #import "DateHelper.h"
 #import "Event+NetworkHelper.h"
 
-@implementation UpcomingEventsTableCell
+@implementation EventsTableViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

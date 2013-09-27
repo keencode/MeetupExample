@@ -20,4 +20,6 @@
 
 - (id)initWithAttributes:(NSDictionary *)attributes;
 
+- (void)updateWithAttributes:(NSDictionary *)attributes;
+
 @end

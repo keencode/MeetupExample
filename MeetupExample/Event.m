@@ -15,15 +15,23 @@
     self = [super init];
     if (self) {
         self.eventID = [attributes objectForKey:@"id"];
-        self.eventName = [attributes objectForKey:@"name"];
-        self.groupName = [[attributes objectForKey:@"group"] objectForKey:@"name"];
-        self.rsvp = [attributes objectForKey:@"yes_rsvp_count"];
-        self.eventTime = [attributes objectForKey:@"time"];
-        self.utcOffset = [attributes objectForKey:@"utc_offset"];
+        NSLog(@"eventID: %@", self.eventID);
         self.isFavorite = NO;
+        
+        [self updateWithAttributes:attributes];
     }
     
     return self;
+}
+
+- (void)updateWithAttributes:(NSDictionary *)attributes
+{
+    self.eventName = [attributes objectForKey:@"name"];
+    NSLog(@"eventName: %@", self.eventName);
+    self.groupName = [[attributes objectForKey:@"group"] objectForKey:@"name"];
+    self.rsvp = [attributes objectForKey:@"yes_rsvp_count"];
+    self.eventTime = [attributes objectForKey:@"time"];
+    self.utcOffset = [attributes objectForKey:@"utc_offset"];
 }
 
 @end

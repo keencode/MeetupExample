@@ -8,6 +8,7 @@
 
 #import "Event+NetworkHelper.h"
 #import "MeetupAPIClient.h"
+#import "DataStore.h"
 
 @implementation Event (NetworkHelper)
 
@@ -21,7 +22,7 @@ NSString const * kEventsErrorDomain = @"events.error.meetup.com";
                              @"state" : @"NY",
                              @"and_text" : @"false",
                              @"limited_events" : @"false",
-                             @"text" : @"mobile",
+                             @"topic" : @"social",
                              @"desc" : @"false",
                              @"city" : @"New York",
                              @"offset" : @0,
@@ -29,6 +30,46 @@ NSString const * kEventsErrorDomain = @"events.error.meetup.com";
                              @"page" : @10,
                              @"sign" : @"true",
                              @"key" : kMeetupAPIKey};
+    
+    [[MeetupAPIClient sharedClient] getPath:@"/2/open_events"
+                                 parameters:params
+                                    success:^(AFHTTPRequestOperation *operation, id JSON) {
+                                        if (JSON) {
+                                            [self eventsFromResponse:JSON onSuccess:^(NSArray *events) {
+                                                if (successBlock) {
+                                                    successBlock(events);
+                                                }
+                                            } onFailure:^(NSError *error) {
+                                                // Handle error;
+                                            }];
+                                        } else {
+                                            // Handle error
+                                        }
+                                    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                        if (errorBlock) {
+                                            errorBlock(error);
+                                        }
+                                    }];
+}
+
++ (void)searchUpcomingEventsWithTerms:(NSDictionary *)searchTerms
+                             onSuccess:(void (^)(NSArray *events))successBlock
+                             onFailure:(void (^)(NSError *error))errorBlock
+{
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:searchTerms];
+    
+    NSDictionary *defaultParams = @{@"status" : @"upcoming",
+                                    @"radius" : @50.0,
+                                    @"and_text" : @"false",
+                                    @"limited_events" : @"false",
+                                    @"desc" : @"false",
+                                    @"offset" : @0,
+                                    @"format" : @"json",
+                                    @"page" : @10,
+                                    @"sign" : @"true",
+                                    @"key" : kMeetupAPIKey};
+    
+    [params addEntriesFromDictionary:defaultParams];
     
     [[MeetupAPIClient sharedClient] getPath:@"/2/open_events"
                                  parameters:params
@@ -61,7 +102,14 @@ NSString const * kEventsErrorDomain = @"events.error.meetup.com";
         NSMutableArray *events = [NSMutableArray arrayWithCapacity:[results count]];
         
         for (NSDictionary *attributes in results) {
-            Event *event = [[Event alloc] initWithAttributes:attributes];
+            NSString *eventID = [attributes objectForKey:@"id"];
+            Event *event = [[DataStore sharedInstance] fetchEventWithID:eventID];
+        
+            if (!event) {
+                event = [[Event alloc] initWithAttributes:attributes];
+                [[DataStore sharedInstance].allEvents addObject:event];
+            }
+                            
             [events addObject:event];
         }
         
