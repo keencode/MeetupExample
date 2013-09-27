@@ -28,6 +28,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    [self searchButtonClick:textField];
+    return YES;
+}
+
 - (IBAction)searchButtonClick:(id)sender
 {
     NSMutableDictionary *searchTerms = [NSMutableDictionary dictionary];

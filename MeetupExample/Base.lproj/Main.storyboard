@@ -52,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventsTableViewCell" rowHeight="108" id="jeq-iV-pCy" customClass="EventsTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventsTableViewCell" rowHeight="108" id="jeq-iV-pCy" customClass="EventsTableViewCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jeq-iV-pCy" id="WXS-2F-9g6">
@@ -67,7 +67,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0T-4z-ufb">
-                                            <rect key="frame" x="87" y="11" width="184" height="21"/>
+                                            <rect key="frame" x="87" y="11" width="223" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="highlightedColor"/>
@@ -103,14 +103,15 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jk-NH-L7k">
-                                            <rect key="frame" x="279" y="8" width="30" height="30"/>
+                                            <rect key="frame" x="266" y="53" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                                             <state key="normal" image="bcell-Heart-back.png">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <state key="disabled" image="bcell-Heart-back.png"/>
-                                            <state key="selected" image="bcell-Heart-back.png" backgroundImage="bcell-Heart-fill.png"/>
+                                            <state key="selected" image="bcell-Heart-selected.png"/>
                                             <state key="highlighted" image="bcell-Heart-back.png"/>
                                             <connections>
                                                 <action selector="favoriteClicked:" destination="jeq-iV-pCy" eventType="touchUpInside" id="g3S-Q7-OFA"/>
@@ -215,7 +216,10 @@
                                     <constraint firstAttribute="height" constant="30" id="w0n-br-X2Y"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="search"/>
+                                <connections>
+                                    <outlet property="delegate" destination="308-Uf-nsO" id="TjJ-R6-Egh"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGX-KV-8Mu">
                                 <rect key="frame" x="95" y="125" width="204" height="30"/>
@@ -224,7 +228,10 @@
                                     <constraint firstAttribute="height" constant="30" id="ZsJ-FW-7oQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" returnKeyType="search"/>
+                                <connections>
+                                    <outlet property="delegate" destination="308-Uf-nsO" id="lZ4-EJ-Gum"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y5G-DF-03c">
                                 <rect key="frame" x="95" y="168" width="205" height="30"/>
@@ -233,7 +240,10 @@
                                     <constraint firstAttribute="height" constant="30" id="5wS-6f-KJz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                <connections>
+                                    <outlet property="delegate" destination="308-Uf-nsO" id="1oq-Qj-juq"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAZ-Pu-Pcu">
                                 <rect key="frame" x="95" y="210" width="205" height="30"/>
@@ -242,7 +252,10 @@
                                     <constraint firstAttribute="height" constant="30" id="jcV-EO-9AR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                <connections>
+                                    <outlet property="delegate" destination="308-Uf-nsO" id="dIz-zQ-BRh"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXS-1l-1h1">
                                 <rect key="frame" x="71" y="261" width="178" height="30"/>
@@ -282,8 +295,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bcell-Heart-back.png" width="30" height="30"/>
-        <image name="bcell-Heart-fill.png" width="30" height="30"/>
+        <image name="bcell-Heart-back.png" width="40" height="40"/>
+        <image name="bcell-Heart-selected.png" width="40" height="40"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
