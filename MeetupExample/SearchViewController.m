@@ -54,8 +54,36 @@
         listViewController.title = @"Results";
         [self.navigationController pushViewController:listViewController animated:YES];
     } onFailure:^(NSError *error) {
-        // Handle failure
+        [self handleError:error];
     }];
+}
+
+- (void)handleError:(NSError *)error
+{
+    NSString *message = @"Server returned an error";
+    
+    if ([error.domain isEqualToString:kEventsErrorDomain]) {
+        switch (error.code) {
+            case kInvalidStatusCode:
+                message = @"Invalid status code";
+                break;
+            case kInvalidJSONResponse:
+                message = @"Invalid JSON response";
+                break;
+            case kZeroEventsResults:
+                message = @"Server returned no results";
+                break;
+            default:
+                break;
+        }
+    }
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:message
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil, nil];
+    [alertView show];
 }
 
 @end

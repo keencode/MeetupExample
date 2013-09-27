@@ -1,5 +1,5 @@
 //
-//  Model.h
+//  DataStore.h
 //  MeetupExample
 //
 //  Created by Yee Peng Chia on 9/27/13.

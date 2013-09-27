@@ -7,12 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "EventsListViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.tabBarController = (UITabBarController *)[self.window rootViewController];
+    self.tabBarController.delegate = self;
+    
     return YES;
 }
 							
@@ -41,6 +44,20 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    for (UIViewController *childViewController in [tabBarController childViewControllers]) {
+        if (childViewController != viewController) {
+            UINavigationController *navigationController = (UINavigationController *)viewController;
+            UIViewController *topViewController = [navigationController topViewController];
+            
+            if ([topViewController isKindOfClass:[EventsListViewController class]]) {
+                [[(EventsListViewController *)topViewController tableView] reloadData];
+            }
+        }
+    }
 }
 
 @end

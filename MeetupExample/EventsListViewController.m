@@ -35,7 +35,7 @@ NSString * const kEventsListViewControllerID = @"EventsListViewController";
         self.events = events;
         [self.tableView reloadData];
     } onFailure:^(NSError *error) {
-        //
+        [self handleError:error];
     }];
 }
 
@@ -43,6 +43,34 @@ NSString * const kEventsListViewControllerID = @"EventsListViewController";
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)handleError:(NSError *)error
+{
+    NSString *message = @"Server returned an error";
+    
+    if ([error.domain isEqualToString:kEventsErrorDomain]) {
+        switch (error.code) {
+            case kInvalidStatusCode:
+                message = @"Invalid status code";
+                break;
+            case kInvalidJSONResponse:
+                message = @"Invalid JSON response";
+                break;
+            case kZeroEventsResults:
+                message = @"Server returned no results";
+                break;
+            default:
+                break;
+        }
+    }
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:message
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil, nil];
+    [alertView show];
 }
 
 #pragma mark - Table view data source

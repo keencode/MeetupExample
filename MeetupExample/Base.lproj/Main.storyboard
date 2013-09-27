@@ -145,7 +145,7 @@
         <scene sceneID="bCB-dI-3RA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SqE-wG-IEM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="yba-ij-Huu"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="second" id="yba-ij-Huu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1pv-HC-R9F">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -285,6 +285,7 @@
         <image name="bcell-Heart-back.png" width="30" height="30"/>
         <image name="bcell-Heart-fill.png" width="30" height="30"/>
         <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

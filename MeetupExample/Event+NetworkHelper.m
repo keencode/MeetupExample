@@ -12,10 +12,8 @@
 
 @implementation Event (NetworkHelper)
 
-NSString const * kEventsErrorDomain = @"events.error.meetup.com";
-
 + (void)getUpcomingEventsOnSuccess:(void (^)(NSArray *events))successBlock
-                         onFailure:(void (^)(NSError *error))errorBlock
+                         onFailure:(void (^)(NSError *error))failureBlock
 {
     NSDictionary *params = @{@"status" : @"upcoming",
                              @"radius" : @50.0,
@@ -31,30 +29,12 @@ NSString const * kEventsErrorDomain = @"events.error.meetup.com";
                              @"sign" : @"true",
                              @"key" : kMeetupAPIKey};
     
-    [[MeetupAPIClient sharedClient] getPath:@"/2/open_events"
-                                 parameters:params
-                                    success:^(AFHTTPRequestOperation *operation, id JSON) {
-                                        if (JSON) {
-                                            [self eventsFromResponse:JSON onSuccess:^(NSArray *events) {
-                                                if (successBlock) {
-                                                    successBlock(events);
-                                                }
-                                            } onFailure:^(NSError *error) {
-                                                // Handle error;
-                                            }];
-                                        } else {
-                                            // Handle error
-                                        }
-                                    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                                        if (errorBlock) {
-                                            errorBlock(error);
-                                        }
-                                    }];
+    [Event getOpenEventsWithParams:params onSuccess:successBlock onFailure:failureBlock];
 }
 
 + (void)searchUpcomingEventsWithTerms:(NSDictionary *)searchTerms
-                             onSuccess:(void (^)(NSArray *events))successBlock
-                             onFailure:(void (^)(NSError *error))errorBlock
+                            onSuccess:(void (^)(NSArray *events))successBlock
+                            onFailure:(void (^)(NSError *error))failureBlock
 {
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:searchTerms];
     
@@ -71,6 +51,13 @@ NSString const * kEventsErrorDomain = @"events.error.meetup.com";
     
     [params addEntriesFromDictionary:defaultParams];
     
+    [Event getOpenEventsWithParams:params onSuccess:successBlock onFailure:failureBlock];
+}
+
++ (void)getOpenEventsWithParams:(NSDictionary *)params
+                      onSuccess:(void (^)(NSArray *events))successBlock
+                      onFailure:(void (^)(NSError *error))failureBlock
+{
     [[MeetupAPIClient sharedClient] getPath:@"/2/open_events"
                                  parameters:params
                                     success:^(AFHTTPRequestOperation *operation, id JSON) {
@@ -80,21 +67,26 @@ NSString const * kEventsErrorDomain = @"events.error.meetup.com";
                                                     successBlock(events);
                                                 }
                                             } onFailure:^(NSError *error) {
-                                                // Handle error;
+                                                if (failureBlock) {
+                                                    failureBlock(error);
+                                                }
                                             }];
                                         } else {
-                                            // Handle error
+                                            NSError *error = [NSError errorWithDomain:kEventsErrorDomain code:kInvalidJSONResponse userInfo:nil];
+                                            if (failureBlock) {
+                                                failureBlock(error);
+                                            }
                                         }
                                     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                                        if (errorBlock) {
-                                            errorBlock(error);
+                                        if (failureBlock) {
+                                            failureBlock(error);
                                         }
                                     }];
 }
 
 + (void)eventsFromResponse:(NSDictionary *)response
                  onSuccess:(void (^)(NSArray *events))successBlock
-                 onFailure:(void (^)(NSError *error))errorBlock
+                 onFailure:(void (^)(NSError *error))failureBlock
 {
     NSArray *results = [response valueForKeyPath:@"results"];
     
@@ -117,12 +109,15 @@ NSString const * kEventsErrorDomain = @"events.error.meetup.com";
             successBlock([NSArray arrayWithArray:events]);
         }
     } else {
-        // Handle error
+        NSError *error = [NSError errorWithDomain:kEventsErrorDomain code:kZeroEventsResults userInfo:nil];
+        if (failureBlock) {
+            failureBlock(error);
+        }
     }
 }
 
 - (void)addFavoriteOnSuccess:(void (^)(BOOL success))successBlock
-                   onFailure:(void (^)(NSError *error))errorBlock
+                   onFailure:(void (^)(NSError *error))failureBlock
 {
     self.isFavorite = YES;
     
@@ -132,7 +127,7 @@ NSString const * kEventsErrorDomain = @"events.error.meetup.com";
 }
 
 - (void)removeFavoriteOnSuccess:(void (^)(BOOL success))successBlock
-                      onFailure:(void (^)(NSError *error))errorBlock
+                      onFailure:(void (^)(NSError *error))failureBlock
 {
     self.isFavorite = NO;
     

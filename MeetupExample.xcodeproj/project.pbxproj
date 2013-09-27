@@ -14,7 +14,7 @@
 		B823E82417F4CE2900774DAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E82317F4CE2900774DAD /* main.m */; };
 		B823E82817F4CE2900774DAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E82717F4CE2900774DAD /* AppDelegate.m */; };
 		B823E82B17F4CE2900774DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B823E82917F4CE2900774DAD /* Main.storyboard */; };
-		B823E83117F4CE2900774DAD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E83017F4CE2900774DAD /* SecondViewController.m */; };
+		B823E83117F4CE2900774DAD /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E83017F4CE2900774DAD /* SearchViewController.m */; };
 		B823E83317F4CE2900774DAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B823E83217F4CE2900774DAD /* Images.xcassets */; };
 		B823E86B17F4DA6700774DAD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823E86A17F4DA6700774DAD /* SenTestingKit.framework */; };
 		B823E86C17F4DA6700774DAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823E81717F4CE2900774DAD /* Foundation.framework */; };
@@ -23,8 +23,8 @@
 		B823E87517F4DA6700774DAD /* MeetupExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E87417F4DA6700774DAD /* MeetupExampleTests.m */; };
 		B823E88317F4E15D00774DAD /* MeetupAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88217F4E15D00774DAD /* MeetupAPIClient.m */; };
 		B823E88617F4EE1300774DAD /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88517F4EE1300774DAD /* Event.m */; };
-		B823E88917F4F6B800774DAD /* UpcomingEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88817F4F6B800774DAD /* UpcomingEventsViewController.m */; };
-		B823E88C17F4F77C00774DAD /* UpcomingEventsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88B17F4F77C00774DAD /* UpcomingEventsTableCell.m */; };
+		B823E88917F4F6B800774DAD /* EventsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88817F4F6B800774DAD /* EventsListViewController.m */; };
+		B823E88C17F4F77C00774DAD /* EventsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88B17F4F77C00774DAD /* EventsTableViewCell.m */; };
 		B823E88F17F4FFF000774DAD /* DateHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88E17F4FFF000774DAD /* DateHelperTest.m */; };
 		B823E89217F5000D00774DAD /* DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E89117F5000D00774DAD /* DateHelper.m */; };
 		B823E89C17F5209D00774DAD /* bcell-Heart-back.png in Resources */ = {isa = PBXBuildFile; fileRef = B823E89A17F5209D00774DAD /* bcell-Heart-back.png */; };
@@ -32,6 +32,9 @@
 		B823E8A017F5247500774DAD /* bcell-Heart-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = B823E89E17F5247500774DAD /* bcell-Heart-fill.png */; };
 		B823E8A117F5247500774DAD /* bcell-Heart-fill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B823E89F17F5247500774DAD /* bcell-Heart-fill@2x.png */; };
 		B823E8A417F525D500774DAD /* Event+NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E8A317F525D500774DAD /* Event+NetworkHelper.m */; };
+		B823E8A917F53FF400774DAD /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E8A817F53FF400774DAD /* DataStore.m */; };
+		B823E8AB17F5417600774DAD /* DataStoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E8AA17F5417600774DAD /* DataStoreTest.m */; };
+		B823E8AD17F54E2200774DAD /* EventTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E8AC17F54E2200774DAD /* EventTest.m */; };
 		ECC3069CDD714F4DBE614376 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D53D34F62F374B00B4014CAA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -58,8 +61,8 @@
 		B823E82617F4CE2900774DAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B823E82717F4CE2900774DAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B823E82A17F4CE2900774DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B823E82F17F4CE2900774DAD /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		B823E83017F4CE2900774DAD /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B823E82F17F4CE2900774DAD /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		B823E83017F4CE2900774DAD /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		B823E83217F4CE2900774DAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B823E83917F4CE2900774DAD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B823E84117F4CE2900774DAD /* MeetupExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeetupExampleTests-Info.plist"; sourceTree = "<group>"; };
@@ -75,10 +78,10 @@
 		B823E88217F4E15D00774DAD /* MeetupAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetupAPIClient.m; sourceTree = "<group>"; };
 		B823E88417F4EE1300774DAD /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		B823E88517F4EE1300774DAD /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
-		B823E88717F4F6B800774DAD /* UpcomingEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpcomingEventsViewController.h; sourceTree = "<group>"; };
-		B823E88817F4F6B800774DAD /* UpcomingEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpcomingEventsViewController.m; sourceTree = "<group>"; };
-		B823E88A17F4F77C00774DAD /* UpcomingEventsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpcomingEventsTableCell.h; sourceTree = "<group>"; };
-		B823E88B17F4F77C00774DAD /* UpcomingEventsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpcomingEventsTableCell.m; sourceTree = "<group>"; };
+		B823E88717F4F6B800774DAD /* EventsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsListViewController.h; sourceTree = "<group>"; };
+		B823E88817F4F6B800774DAD /* EventsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsListViewController.m; sourceTree = "<group>"; };
+		B823E88A17F4F77C00774DAD /* EventsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsTableViewCell.h; sourceTree = "<group>"; };
+		B823E88B17F4F77C00774DAD /* EventsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsTableViewCell.m; sourceTree = "<group>"; };
 		B823E88E17F4FFF000774DAD /* DateHelperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHelperTest.m; sourceTree = "<group>"; };
 		B823E89017F5000D00774DAD /* DateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateHelper.h; sourceTree = "<group>"; };
 		B823E89117F5000D00774DAD /* DateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHelper.m; sourceTree = "<group>"; };
@@ -88,6 +91,10 @@
 		B823E89F17F5247500774DAD /* bcell-Heart-fill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bcell-Heart-fill@2x.png"; sourceTree = "<group>"; };
 		B823E8A217F525D500774DAD /* Event+NetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Event+NetworkHelper.h"; sourceTree = "<group>"; };
 		B823E8A317F525D500774DAD /* Event+NetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Event+NetworkHelper.m"; sourceTree = "<group>"; };
+		B823E8A717F53FF400774DAD /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
+		B823E8A817F53FF400774DAD /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
+		B823E8AA17F5417600774DAD /* DataStoreTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStoreTest.m; sourceTree = "<group>"; };
+		B823E8AC17F54E2200774DAD /* EventTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTest.m; sourceTree = "<group>"; };
 		D53D34F62F374B00B4014CAA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -184,7 +191,9 @@
 		B823E83F17F4CE2900774DAD /* MeetupExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				B823E8AC17F54E2200774DAD /* EventTest.m */,
 				B823E88E17F4FFF000774DAD /* DateHelperTest.m */,
+				B823E8AA17F5417600774DAD /* DataStoreTest.m */,
 				B823E84017F4CE2900774DAD /* Supporting Files */,
 			);
 			path = MeetupExampleTests;
@@ -203,9 +212,9 @@
 			isa = PBXGroup;
 			children = (
 				B823E82917F4CE2900774DAD /* Main.storyboard */,
+				B823E8A617F53AEC00774DAD /* common */,
 				B823E88D17F4F78100774DAD /* upcoming */,
-				B823E82F17F4CE2900774DAD /* SecondViewController.h */,
-				B823E83017F4CE2900774DAD /* SecondViewController.m */,
+				B823E8A517F531DF00774DAD /* search */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -213,6 +222,8 @@
 		B823E85017F4D48B00774DAD /* model */ = {
 			isa = PBXGroup;
 			children = (
+				B823E8A717F53FF400774DAD /* DataStore.h */,
+				B823E8A817F53FF400774DAD /* DataStore.m */,
 				B823E88417F4EE1300774DAD /* Event.h */,
 				B823E88517F4EE1300774DAD /* Event.m */,
 				B823E8A217F525D500774DAD /* Event+NetworkHelper.h */,
@@ -261,12 +272,28 @@
 		B823E88D17F4F78100774DAD /* upcoming */ = {
 			isa = PBXGroup;
 			children = (
-				B823E88717F4F6B800774DAD /* UpcomingEventsViewController.h */,
-				B823E88817F4F6B800774DAD /* UpcomingEventsViewController.m */,
-				B823E88A17F4F77C00774DAD /* UpcomingEventsTableCell.h */,
-				B823E88B17F4F77C00774DAD /* UpcomingEventsTableCell.m */,
+				B823E88717F4F6B800774DAD /* EventsListViewController.h */,
+				B823E88817F4F6B800774DAD /* EventsListViewController.m */,
 			);
 			name = upcoming;
+			sourceTree = "<group>";
+		};
+		B823E8A517F531DF00774DAD /* search */ = {
+			isa = PBXGroup;
+			children = (
+				B823E82F17F4CE2900774DAD /* SearchViewController.h */,
+				B823E83017F4CE2900774DAD /* SearchViewController.m */,
+			);
+			name = search;
+			sourceTree = "<group>";
+		};
+		B823E8A617F53AEC00774DAD /* common */ = {
+			isa = PBXGroup;
+			children = (
+				B823E88A17F4F77C00774DAD /* EventsTableViewCell.h */,
+				B823E88B17F4F77C00774DAD /* EventsTableViewCell.m */,
+			);
+			name = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,14 +433,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B823E88617F4EE1300774DAD /* Event.m in Sources */,
-				B823E88917F4F6B800774DAD /* UpcomingEventsViewController.m in Sources */,
-				B823E83117F4CE2900774DAD /* SecondViewController.m in Sources */,
-				B823E88C17F4F77C00774DAD /* UpcomingEventsTableCell.m in Sources */,
+				B823E88917F4F6B800774DAD /* EventsListViewController.m in Sources */,
+				B823E83117F4CE2900774DAD /* SearchViewController.m in Sources */,
+				B823E88C17F4F77C00774DAD /* EventsTableViewCell.m in Sources */,
 				B823E82817F4CE2900774DAD /* AppDelegate.m in Sources */,
 				B823E89217F5000D00774DAD /* DateHelper.m in Sources */,
 				B823E8A417F525D500774DAD /* Event+NetworkHelper.m in Sources */,
 				B823E82417F4CE2900774DAD /* main.m in Sources */,
 				B823E88317F4E15D00774DAD /* MeetupAPIClient.m in Sources */,
+				B823E8A917F53FF400774DAD /* DataStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +449,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B823E8AD17F54E2200774DAD /* EventTest.m in Sources */,
 				B823E87517F4DA6700774DAD /* MeetupExampleTests.m in Sources */,
+				B823E8AB17F5417600774DAD /* DataStoreTest.m in Sources */,
 				B823E88F17F4FFF000774DAD /* DateHelperTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
