@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Keen Code. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+#import <SenTestingKit/SenTestingKit.h>
 
-@interface MeetupExampleTests : XCTestCase
+@interface MeetupExampleTests : SenTestCase
 
 @end
 
@@ -28,7 +28,7 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    STFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
 @end
