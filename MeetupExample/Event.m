@@ -61,6 +61,7 @@
         self.rsvp = [attributes objectForKey:@"yes_rsvp_count"];
         self.eventTime = [attributes objectForKey:@"time"];
         self.utcOffset = [attributes objectForKey:@"utc_offset"];
+        self.isFavorite = NO;
     }
     
     return self;

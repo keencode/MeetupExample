@@ -12,12 +12,15 @@
 @interface UpcomingEventsTableCell : UITableViewCell
 
 @property (nonatomic, strong) Event *event;
-@property (nonatomic, strong) IBOutlet UILabel *dayLabel;
-@property (nonatomic, strong) IBOutlet UILabel *monthLabel;
-@property (nonatomic, strong) IBOutlet UILabel *dateLabel;
-@property (nonatomic, strong) IBOutlet UILabel *timeLabel;
-@property (nonatomic, strong) IBOutlet UILabel *groupNameLabel;
-@property (nonatomic, strong) IBOutlet UILabel *eventNameLabel;
-@property (nonatomic, strong) IBOutlet UILabel *rsvpLabel;
+@property (nonatomic, weak) IBOutlet UILabel *dayLabel;
+@property (nonatomic, weak) IBOutlet UILabel *monthLabel;
+@property (nonatomic, weak) IBOutlet UILabel *dateLabel;
+@property (nonatomic, weak) IBOutlet UILabel *timeLabel;
+@property (nonatomic, weak) IBOutlet UILabel *groupNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *eventNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *rsvpLabel;
+@property (nonatomic, weak) IBOutlet UIButton *favoriteButton;
+
+- (IBAction)favoriteClicked:(id)sender;
 
 @end

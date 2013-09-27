@@ -14,18 +14,29 @@
 		B823E82417F4CE2900774DAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E82317F4CE2900774DAD /* main.m */; };
 		B823E82817F4CE2900774DAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E82717F4CE2900774DAD /* AppDelegate.m */; };
 		B823E82B17F4CE2900774DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B823E82917F4CE2900774DAD /* Main.storyboard */; };
-		B823E82E17F4CE2900774DAD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E82D17F4CE2900774DAD /* FirstViewController.m */; };
 		B823E83117F4CE2900774DAD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E83017F4CE2900774DAD /* SecondViewController.m */; };
 		B823E83317F4CE2900774DAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B823E83217F4CE2900774DAD /* Images.xcassets */; };
-		B823E83A17F4CE2900774DAD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823E83917F4CE2900774DAD /* XCTest.framework */; };
-		B823E83B17F4CE2900774DAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823E81717F4CE2900774DAD /* Foundation.framework */; };
-		B823E83C17F4CE2900774DAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823E81B17F4CE2900774DAD /* UIKit.framework */; };
-		B823E84417F4CE2900774DAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B823E84217F4CE2900774DAD /* InfoPlist.strings */; };
-		B823E84617F4CE2900774DAD /* MeetupExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E84517F4CE2900774DAD /* MeetupExampleTests.m */; };
+		B823E86B17F4DA6700774DAD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823E86A17F4DA6700774DAD /* SenTestingKit.framework */; };
+		B823E86C17F4DA6700774DAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823E81717F4CE2900774DAD /* Foundation.framework */; };
+		B823E86D17F4DA6700774DAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823E81B17F4CE2900774DAD /* UIKit.framework */; };
+		B823E87317F4DA6700774DAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B823E87117F4DA6700774DAD /* InfoPlist.strings */; };
+		B823E87517F4DA6700774DAD /* MeetupExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E87417F4DA6700774DAD /* MeetupExampleTests.m */; };
+		B823E88317F4E15D00774DAD /* MeetupAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88217F4E15D00774DAD /* MeetupAPIClient.m */; };
+		B823E88617F4EE1300774DAD /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88517F4EE1300774DAD /* Event.m */; };
+		B823E88917F4F6B800774DAD /* UpcomingEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88817F4F6B800774DAD /* UpcomingEventsViewController.m */; };
+		B823E88C17F4F77C00774DAD /* UpcomingEventsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88B17F4F77C00774DAD /* UpcomingEventsTableCell.m */; };
+		B823E88F17F4FFF000774DAD /* DateHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88E17F4FFF000774DAD /* DateHelperTest.m */; };
+		B823E89217F5000D00774DAD /* DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E89117F5000D00774DAD /* DateHelper.m */; };
+		B823E89517F51E3800774DAD /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E89417F51E3800774DAD /* EventDetailViewController.m */; };
+		B823E89817F5205200774DAD /* overlay-loved.png in Resources */ = {isa = PBXBuildFile; fileRef = B823E89617F5205200774DAD /* overlay-loved.png */; };
+		B823E89917F5205200774DAD /* overlay-loved@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B823E89717F5205200774DAD /* overlay-loved@2x.png */; };
+		B823E89C17F5209D00774DAD /* bcell-Heart-back.png in Resources */ = {isa = PBXBuildFile; fileRef = B823E89A17F5209D00774DAD /* bcell-Heart-back.png */; };
+		B823E89D17F5209D00774DAD /* bcell-Heart-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B823E89B17F5209D00774DAD /* bcell-Heart-back@2x.png */; };
+		ECC3069CDD714F4DBE614376 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D53D34F62F374B00B4014CAA /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B823E83D17F4CE2900774DAD /* PBXContainerItemProxy */ = {
+		B823E87717F4DA6700774DAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B823E80C17F4CE2900774DAD /* Project object */;
 			proxyType = 1;
@@ -35,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65E40D6DF331439EA0BEAC98 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B823E81417F4CE2900774DAD /* MeetupExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetupExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B823E81717F4CE2900774DAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B823E81917F4CE2900774DAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,16 +58,37 @@
 		B823E82617F4CE2900774DAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B823E82717F4CE2900774DAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B823E82A17F4CE2900774DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B823E82C17F4CE2900774DAD /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		B823E82D17F4CE2900774DAD /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		B823E82F17F4CE2900774DAD /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B823E83017F4CE2900774DAD /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B823E83217F4CE2900774DAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B823E83817F4CE2900774DAD /* MeetupExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetupExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B823E83917F4CE2900774DAD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B823E84117F4CE2900774DAD /* MeetupExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeetupExampleTests-Info.plist"; sourceTree = "<group>"; };
 		B823E84317F4CE2900774DAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B823E84517F4CE2900774DAD /* MeetupExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetupExampleTests.m; sourceTree = "<group>"; };
+		B823E85917F4D6D400774DAD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B823E86917F4DA6700774DAD /* MeetupExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetupExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B823E86A17F4DA6700774DAD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B823E87017F4DA6700774DAD /* MeetupExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeetupExampleTests-Info.plist"; sourceTree = "<group>"; };
+		B823E87217F4DA6700774DAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B823E87417F4DA6700774DAD /* MeetupExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetupExampleTests.m; sourceTree = "<group>"; };
+		B823E87617F4DA6700774DAD /* MeetupExampleTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MeetupExampleTests-Prefix.pch"; sourceTree = "<group>"; };
+		B823E88117F4E15D00774DAD /* MeetupAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetupAPIClient.h; sourceTree = "<group>"; };
+		B823E88217F4E15D00774DAD /* MeetupAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetupAPIClient.m; sourceTree = "<group>"; };
+		B823E88417F4EE1300774DAD /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		B823E88517F4EE1300774DAD /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		B823E88717F4F6B800774DAD /* UpcomingEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpcomingEventsViewController.h; sourceTree = "<group>"; };
+		B823E88817F4F6B800774DAD /* UpcomingEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpcomingEventsViewController.m; sourceTree = "<group>"; };
+		B823E88A17F4F77C00774DAD /* UpcomingEventsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpcomingEventsTableCell.h; sourceTree = "<group>"; };
+		B823E88B17F4F77C00774DAD /* UpcomingEventsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpcomingEventsTableCell.m; sourceTree = "<group>"; };
+		B823E88E17F4FFF000774DAD /* DateHelperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHelperTest.m; sourceTree = "<group>"; };
+		B823E89017F5000D00774DAD /* DateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateHelper.h; sourceTree = "<group>"; };
+		B823E89117F5000D00774DAD /* DateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHelper.m; sourceTree = "<group>"; };
+		B823E89317F51E3800774DAD /* EventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailViewController.h; sourceTree = "<group>"; };
+		B823E89417F51E3800774DAD /* EventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewController.m; sourceTree = "<group>"; };
+		B823E89617F5205200774DAD /* overlay-loved.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-loved.png"; sourceTree = "<group>"; };
+		B823E89717F5205200774DAD /* overlay-loved@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-loved@2x.png"; sourceTree = "<group>"; };
+		B823E89A17F5209D00774DAD /* bcell-Heart-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bcell-Heart-back.png"; sourceTree = "<group>"; };
+		B823E89B17F5209D00774DAD /* bcell-Heart-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bcell-Heart-back@2x.png"; sourceTree = "<group>"; };
+		D53D34F62F374B00B4014CAA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,16 +99,17 @@
 				B823E81A17F4CE2900774DAD /* CoreGraphics.framework in Frameworks */,
 				B823E81C17F4CE2900774DAD /* UIKit.framework in Frameworks */,
 				B823E81817F4CE2900774DAD /* Foundation.framework in Frameworks */,
+				ECC3069CDD714F4DBE614376 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B823E83517F4CE2900774DAD /* Frameworks */ = {
+		B823E86617F4DA6700774DAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B823E83A17F4CE2900774DAD /* XCTest.framework in Frameworks */,
-				B823E83C17F4CE2900774DAD /* UIKit.framework in Frameworks */,
-				B823E83B17F4CE2900774DAD /* Foundation.framework in Frameworks */,
+				B823E86B17F4DA6700774DAD /* SenTestingKit.framework in Frameworks */,
+				B823E86D17F4DA6700774DAD /* UIKit.framework in Frameworks */,
+				B823E86C17F4DA6700774DAD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,8 +121,10 @@
 			children = (
 				B823E81D17F4CE2900774DAD /* MeetupExample */,
 				B823E83F17F4CE2900774DAD /* MeetupExampleTests */,
+				B823E86E17F4DA6700774DAD /* MeetupExampleTests */,
 				B823E81617F4CE2900774DAD /* Frameworks */,
 				B823E81517F4CE2900774DAD /* Products */,
+				65E40D6DF331439EA0BEAC98 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				B823E81417F4CE2900774DAD /* MeetupExample.app */,
-				B823E83817F4CE2900774DAD /* MeetupExampleTests.xctest */,
+				B823E86917F4DA6700774DAD /* MeetupExampleTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,10 +140,13 @@
 		B823E81617F4CE2900774DAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B823E85917F4D6D400774DAD /* CoreLocation.framework */,
 				B823E81717F4CE2900774DAD /* Foundation.framework */,
 				B823E81917F4CE2900774DAD /* CoreGraphics.framework */,
 				B823E81B17F4CE2900774DAD /* UIKit.framework */,
 				B823E83917F4CE2900774DAD /* XCTest.framework */,
+				D53D34F62F374B00B4014CAA /* libPods.a */,
+				B823E86A17F4DA6700774DAD /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,11 +156,10 @@
 			children = (
 				B823E82617F4CE2900774DAD /* AppDelegate.h */,
 				B823E82717F4CE2900774DAD /* AppDelegate.m */,
-				B823E82917F4CE2900774DAD /* Main.storyboard */,
-				B823E82C17F4CE2900774DAD /* FirstViewController.h */,
-				B823E82D17F4CE2900774DAD /* FirstViewController.m */,
-				B823E82F17F4CE2900774DAD /* SecondViewController.h */,
-				B823E83017F4CE2900774DAD /* SecondViewController.m */,
+				B823E85F17F4D84700774DAD /* helpers */,
+				B823E85117F4D50F00774DAD /* network */,
+				B823E85017F4D48B00774DAD /* model */,
+				B823E84F17F4D47E00774DAD /* views */,
 				B823E83217F4CE2900774DAD /* Images.xcassets */,
 				B823E81E17F4CE2900774DAD /* Supporting Files */,
 			);
@@ -131,6 +169,10 @@
 		B823E81E17F4CE2900774DAD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B823E89617F5205200774DAD /* overlay-loved.png */,
+				B823E89717F5205200774DAD /* overlay-loved@2x.png */,
+				B823E89A17F5209D00774DAD /* bcell-Heart-back.png */,
+				B823E89B17F5209D00774DAD /* bcell-Heart-back@2x.png */,
 				B823E81F17F4CE2900774DAD /* MeetupExample-Info.plist */,
 				B823E82017F4CE2900774DAD /* InfoPlist.strings */,
 				B823E82317F4CE2900774DAD /* main.m */,
@@ -142,7 +184,7 @@
 		B823E83F17F4CE2900774DAD /* MeetupExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				B823E84517F4CE2900774DAD /* MeetupExampleTests.m */,
+				B823E88E17F4FFF000774DAD /* DateHelperTest.m */,
 				B823E84017F4CE2900774DAD /* Supporting Files */,
 			);
 			path = MeetupExampleTests;
@@ -157,6 +199,76 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B823E84F17F4D47E00774DAD /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B823E82917F4CE2900774DAD /* Main.storyboard */,
+				B823E88D17F4F78100774DAD /* upcoming */,
+				B823E82F17F4CE2900774DAD /* SecondViewController.h */,
+				B823E83017F4CE2900774DAD /* SecondViewController.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		B823E85017F4D48B00774DAD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B823E88417F4EE1300774DAD /* Event.h */,
+				B823E88517F4EE1300774DAD /* Event.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		B823E85117F4D50F00774DAD /* network */ = {
+			isa = PBXGroup;
+			children = (
+				B823E88117F4E15D00774DAD /* MeetupAPIClient.h */,
+				B823E88217F4E15D00774DAD /* MeetupAPIClient.m */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		B823E85F17F4D84700774DAD /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B823E89017F5000D00774DAD /* DateHelper.h */,
+				B823E89117F5000D00774DAD /* DateHelper.m */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
+		B823E86E17F4DA6700774DAD /* MeetupExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B823E87417F4DA6700774DAD /* MeetupExampleTests.m */,
+				B823E86F17F4DA6700774DAD /* Supporting Files */,
+			);
+			path = MeetupExampleTests;
+			sourceTree = "<group>";
+		};
+		B823E86F17F4DA6700774DAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B823E87017F4DA6700774DAD /* MeetupExampleTests-Info.plist */,
+				B823E87117F4DA6700774DAD /* InfoPlist.strings */,
+				B823E87617F4DA6700774DAD /* MeetupExampleTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B823E88D17F4F78100774DAD /* upcoming */ = {
+			isa = PBXGroup;
+			children = (
+				B823E88717F4F6B800774DAD /* UpcomingEventsViewController.h */,
+				B823E88817F4F6B800774DAD /* UpcomingEventsViewController.m */,
+				B823E88A17F4F77C00774DAD /* UpcomingEventsTableCell.h */,
+				B823E88B17F4F77C00774DAD /* UpcomingEventsTableCell.m */,
+				B823E89317F51E3800774DAD /* EventDetailViewController.h */,
+				B823E89417F51E3800774DAD /* EventDetailViewController.m */,
+			);
+			name = upcoming;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B823E84917F4CE2900774DAD /* Build configuration list for PBXNativeTarget "MeetupExample" */;
 			buildPhases = (
+				115427219A2B41E4B5CB332A /* Check Pods Manifest.lock */,
 				B823E81017F4CE2900774DAD /* Sources */,
 				B823E81117F4CE2900774DAD /* Frameworks */,
 				B823E81217F4CE2900774DAD /* Resources */,
+				BE9997D930204355A8310718 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,23 +291,23 @@
 			productReference = B823E81417F4CE2900774DAD /* MeetupExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B823E83717F4CE2900774DAD /* MeetupExampleTests */ = {
+		B823E86817F4DA6700774DAD /* MeetupExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B823E84C17F4CE2900774DAD /* Build configuration list for PBXNativeTarget "MeetupExampleTests" */;
+			buildConfigurationList = B823E87917F4DA6700774DAD /* Build configuration list for PBXNativeTarget "MeetupExampleTests" */;
 			buildPhases = (
-				B823E83417F4CE2900774DAD /* Sources */,
-				B823E83517F4CE2900774DAD /* Frameworks */,
-				B823E83617F4CE2900774DAD /* Resources */,
+				B823E86517F4DA6700774DAD /* Sources */,
+				B823E86617F4DA6700774DAD /* Frameworks */,
+				B823E86717F4DA6700774DAD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B823E83E17F4CE2900774DAD /* PBXTargetDependency */,
+				B823E87817F4DA6700774DAD /* PBXTargetDependency */,
 			);
 			name = MeetupExampleTests;
 			productName = MeetupExampleTests;
-			productReference = B823E83817F4CE2900774DAD /* MeetupExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = B823E86917F4DA6700774DAD /* MeetupExampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -204,7 +318,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Keen Code";
 				TargetAttributes = {
-					B823E83717F4CE2900774DAD = {
+					B823E86817F4DA6700774DAD = {
 						TestTargetID = B823E81317F4CE2900774DAD;
 					};
 				};
@@ -223,7 +337,7 @@
 			projectRoot = "";
 			targets = (
 				B823E81317F4CE2900774DAD /* MeetupExample */,
-				B823E83717F4CE2900774DAD /* MeetupExampleTests */,
+				B823E86817F4DA6700774DAD /* MeetupExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,49 +347,92 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B823E89917F5205200774DAD /* overlay-loved@2x.png in Resources */,
 				B823E83317F4CE2900774DAD /* Images.xcassets in Resources */,
+				B823E89C17F5209D00774DAD /* bcell-Heart-back.png in Resources */,
+				B823E89817F5205200774DAD /* overlay-loved.png in Resources */,
 				B823E82217F4CE2900774DAD /* InfoPlist.strings in Resources */,
 				B823E82B17F4CE2900774DAD /* Main.storyboard in Resources */,
+				B823E89D17F5209D00774DAD /* bcell-Heart-back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B823E83617F4CE2900774DAD /* Resources */ = {
+		B823E86717F4DA6700774DAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B823E84417F4CE2900774DAD /* InfoPlist.strings in Resources */,
+				B823E87317F4DA6700774DAD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		115427219A2B41E4B5CB332A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE9997D930204355A8310718 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B823E81017F4CE2900774DAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B823E89517F51E3800774DAD /* EventDetailViewController.m in Sources */,
+				B823E88617F4EE1300774DAD /* Event.m in Sources */,
+				B823E88917F4F6B800774DAD /* UpcomingEventsViewController.m in Sources */,
 				B823E83117F4CE2900774DAD /* SecondViewController.m in Sources */,
+				B823E88C17F4F77C00774DAD /* UpcomingEventsTableCell.m in Sources */,
 				B823E82817F4CE2900774DAD /* AppDelegate.m in Sources */,
-				B823E82E17F4CE2900774DAD /* FirstViewController.m in Sources */,
+				B823E89217F5000D00774DAD /* DateHelper.m in Sources */,
 				B823E82417F4CE2900774DAD /* main.m in Sources */,
+				B823E88317F4E15D00774DAD /* MeetupAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B823E83417F4CE2900774DAD /* Sources */ = {
+		B823E86517F4DA6700774DAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B823E84617F4CE2900774DAD /* MeetupExampleTests.m in Sources */,
+				B823E87517F4DA6700774DAD /* MeetupExampleTests.m in Sources */,
+				B823E88F17F4FFF000774DAD /* DateHelperTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B823E83E17F4CE2900774DAD /* PBXTargetDependency */ = {
+		B823E87817F4DA6700774DAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B823E81317F4CE2900774DAD /* MeetupExample */;
-			targetProxy = B823E83D17F4CE2900774DAD /* PBXContainerItemProxy */;
+			targetProxy = B823E87717F4DA6700774DAD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -300,6 +457,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				B823E84317F4CE2900774DAD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B823E87117F4DA6700774DAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B823E87217F4DA6700774DAD /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -340,7 +505,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -373,7 +538,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -381,12 +546,14 @@
 		};
 		B823E84A17F4CE2900774DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65E40D6DF331439EA0BEAC98 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeetupExample/MeetupExample-Prefix.pch";
 				INFOPLIST_FILE = "MeetupExample/MeetupExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,18 +561,20 @@
 		};
 		B823E84B17F4CE2900774DAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65E40D6DF331439EA0BEAC98 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeetupExample/MeetupExample-Prefix.pch";
 				INFOPLIST_FILE = "MeetupExample/MeetupExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		B823E84D17F4CE2900774DAD /* Debug */ = {
+		B823E87A17F4DA6700774DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -416,19 +585,20 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MeetupExample/MeetupExample-Prefix.pch";
+				GCC_PREFIX_HEADER = "MeetupExampleTests/MeetupExampleTests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "MeetupExampleTests/MeetupExampleTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		B823E84E17F4CE2900774DAD /* Release */ = {
+		B823E87B17F4DA6700774DAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -439,11 +609,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MeetupExample/MeetupExample-Prefix.pch";
+				GCC_PREFIX_HEADER = "MeetupExampleTests/MeetupExampleTests-Prefix.pch";
 				INFOPLIST_FILE = "MeetupExampleTests/MeetupExampleTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -466,14 +637,16 @@
 				B823E84B17F4CE2900774DAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B823E84C17F4CE2900774DAD /* Build configuration list for PBXNativeTarget "MeetupExampleTests" */ = {
+		B823E87917F4DA6700774DAD /* Build configuration list for PBXNativeTarget "MeetupExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B823E84D17F4CE2900774DAD /* Debug */,
-				B823E84E17F4CE2900774DAD /* Release */,
+				B823E87A17F4DA6700774DAD /* Debug */,
+				B823E87B17F4DA6700774DAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

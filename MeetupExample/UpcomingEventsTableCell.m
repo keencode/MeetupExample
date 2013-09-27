@@ -7,6 +7,7 @@
 //
 
 #import "UpcomingEventsTableCell.h"
+#import "DateHelper.h"
 
 @implementation UpcomingEventsTableCell
 
@@ -34,8 +35,31 @@
     self.groupNameLabel.text = self.event.groupName;
     self.rsvpLabel.text = [NSString stringWithFormat:@"%@ members attending", self.event.rsvp];
     
+    self.dayLabel.text = [[DateHelper dayStringFromUTCTime:self.event.eventTime withOffset:self.event.utcOffset] uppercaseString];
     
+    self.monthLabel.text = [[DateHelper monthStringFromUTCTime:self.event.eventTime withOffset:self.event.utcOffset] uppercaseString];
+    
+    self.dateLabel.text = [[DateHelper dateStringFromUTCTime:self.event.eventTime withOffset:self.event.utcOffset] uppercaseString];
+    
+    self.timeLabel.text = [[DateHelper timeStringFromUTCTime:self.event.eventTime withOffset:self.event.utcOffset] uppercaseString];
+    
+    [self updateFavoriteButton];
 }
 
+- (IBAction)favoriteClicked:(id)sender
+{
+    self.event.isFavorite = !self.event.isFavorite;
+    
+    [self updateFavoriteButton];
+}
+
+- (void)updateFavoriteButton
+{
+    if (self.event.isFavorite) {
+        self.favoriteButton.selected = YES;
+    } else {
+        self.favoriteButton.selected = NO;
+    }
+}
 
 @end

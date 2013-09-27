@@ -10,4 +10,18 @@
 
 @interface DateHelper : NSObject
 
++ (NSTimeInterval)eventTimeIntervalFromNumber:(NSNumber *)eventTime;
+
++ (NSInteger)utcOffsetAsIntegerFromNumber:(NSNumber *)utcOffset;
+
++ (NSString *)localEventTimeFromUTCTime:(NSNumber *)eventTime withOffset:(NSNumber *)utcOffset;
+
++ (NSString *)dateStringFromUTCTime:(NSNumber *)eventTime withOffset:(NSNumber *)utcOffset;
+
++ (NSString *)dayStringFromUTCTime:(NSNumber *)eventTime withOffset:(NSNumber *)utcOffset;
+
++ (NSString *)monthStringFromUTCTime:(NSNumber *)eventTime withOffset:(NSNumber *)utcOffset;
+
++ (NSString *)timeStringFromUTCTime:(NSNumber *)eventTime withOffset:(NSNumber *)utcOffset;
+
 @end

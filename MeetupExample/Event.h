@@ -16,6 +16,7 @@
 @property (nonatomic, copy) NSNumber *eventTime;
 @property (nonatomic, copy) NSNumber *utcOffset;
 @property (nonatomic, copy) NSNumber *rsvp;
+@property (assign) BOOL isFavorite;
 
 + (void)getUpcomingEventsOnSuccess:(void (^)(NSArray *events))successBlock
                          onFailure:(void (^)(NSError *error))errorBlock;
