@@ -150,10 +150,12 @@
                                             <rect key="frame" x="279" y="8" width="30" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <state key="normal" backgroundImage="bcell-Heart-back.png">
+                                            <state key="normal" image="bcell-Heart-back.png">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
-                                            <state key="selected" image="overlay-loved.png"/>
+                                            <state key="disabled" image="bcell-Heart-back.png"/>
+                                            <state key="selected" image="bcell-Heart-back.png" backgroundImage="bcell-Heart-fill.png"/>
+                                            <state key="highlighted" image="bcell-Heart-back.png"/>
                                             <connections>
                                                 <action selector="favoriteClicked:" destination="jeq-iV-pCy" eventType="touchUpInside" id="g3S-Q7-OFA"/>
                                             </connections>
@@ -204,8 +206,8 @@
     </scenes>
     <resources>
         <image name="bcell-Heart-back.png" width="30" height="30"/>
+        <image name="bcell-Heart-fill.png" width="30" height="30"/>
         <image name="first" width="30" height="30"/>
-        <image name="overlay-loved.png" width="21" height="18"/>
         <image name="second" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

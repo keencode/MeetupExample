@@ -7,7 +7,7 @@
 //
 
 #import "UpcomingEventsViewController.h"
-#import "Event.h"
+#import "Event+NetworkHelper.h"
 #import "UpcomingEventsTableCell.h"
 
 @interface UpcomingEventsViewController ()

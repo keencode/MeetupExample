@@ -18,9 +18,6 @@
 @property (nonatomic, copy) NSNumber *rsvp;
 @property (assign) BOOL isFavorite;
 
-+ (void)getUpcomingEventsOnSuccess:(void (^)(NSArray *events))successBlock
-                         onFailure:(void (^)(NSError *error))errorBlock;
-
 - (id)initWithAttributes:(NSDictionary *)attributes;
 
 @end

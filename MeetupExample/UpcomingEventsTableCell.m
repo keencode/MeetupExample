@@ -8,6 +8,7 @@
 
 #import "UpcomingEventsTableCell.h"
 #import "DateHelper.h"
+#import "Event+NetworkHelper.h"
 
 @implementation UpcomingEventsTableCell
 
@@ -46,19 +47,31 @@
     [self updateFavoriteButton];
 }
 
-- (IBAction)favoriteClicked:(id)sender
-{
-    self.event.isFavorite = !self.event.isFavorite;
-    
-    [self updateFavoriteButton];
-}
-
 - (void)updateFavoriteButton
 {
     if (self.event.isFavorite) {
         self.favoriteButton.selected = YES;
     } else {
         self.favoriteButton.selected = NO;
+    }
+}
+
+- (IBAction)favoriteClicked:(id)sender
+{
+    __block id weakSelf = self;
+    
+    if (!self.event.isFavorite) {
+        [self.event addFavoriteOnSuccess:^(BOOL success) {
+            [weakSelf updateFavoriteButton];
+        } onFailure:^(NSError *error) {
+            // Handle failure
+        }];
+    } else {
+        [self.event removeFavoriteOnSuccess:^(BOOL success) {
+            [weakSelf updateFavoriteButton];
+        } onFailure:^(NSError *error) {
+            // Handle failure
+        }];
     }
 }
 
