@@ -14,27 +14,25 @@
 		B823E82417F4CE2900774DAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E82317F4CE2900774DAD /* main.m */; };
 		B823E82817F4CE2900774DAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E82717F4CE2900774DAD /* AppDelegate.m */; };
 		B823E82B17F4CE2900774DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B823E82917F4CE2900774DAD /* Main.storyboard */; };
-		B823E83117F4CE2900774DAD /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E83017F4CE2900774DAD /* SearchViewController.m */; };
 		B823E83317F4CE2900774DAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B823E83217F4CE2900774DAD /* Images.xcassets */; };
 		B823E86B17F4DA6700774DAD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823E86A17F4DA6700774DAD /* SenTestingKit.framework */; };
 		B823E86C17F4DA6700774DAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823E81717F4CE2900774DAD /* Foundation.framework */; };
 		B823E86D17F4DA6700774DAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823E81B17F4CE2900774DAD /* UIKit.framework */; };
 		B823E87317F4DA6700774DAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B823E87117F4DA6700774DAD /* InfoPlist.strings */; };
 		B823E87517F4DA6700774DAD /* MeetupExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E87417F4DA6700774DAD /* MeetupExampleTests.m */; };
-		B823E88317F4E15D00774DAD /* MeetupAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88217F4E15D00774DAD /* MeetupAPIClient.m */; };
-		B823E88617F4EE1300774DAD /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88517F4EE1300774DAD /* Event.m */; };
-		B823E88917F4F6B800774DAD /* EventsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88817F4F6B800774DAD /* EventsListViewController.m */; };
-		B823E88C17F4F77C00774DAD /* EventsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88B17F4F77C00774DAD /* EventsTableViewCell.m */; };
 		B823E88F17F4FFF000774DAD /* DateHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E88E17F4FFF000774DAD /* DateHelperTest.m */; };
-		B823E89217F5000D00774DAD /* DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E89117F5000D00774DAD /* DateHelper.m */; };
-		B823E89C17F5209D00774DAD /* bcell-Heart-back.png in Resources */ = {isa = PBXBuildFile; fileRef = B823E89A17F5209D00774DAD /* bcell-Heart-back.png */; };
-		B823E89D17F5209D00774DAD /* bcell-Heart-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B823E89B17F5209D00774DAD /* bcell-Heart-back@2x.png */; };
-		B823E8A417F525D500774DAD /* Event+NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E8A317F525D500774DAD /* Event+NetworkHelper.m */; };
-		B823E8A917F53FF400774DAD /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E8A817F53FF400774DAD /* DataStore.m */; };
 		B823E8AB17F5417600774DAD /* DataStoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E8AA17F5417600774DAD /* DataStoreTest.m */; };
 		B823E8AD17F54E2200774DAD /* EventTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E8AC17F54E2200774DAD /* EventTest.m */; };
-		B823E8B317F5603C00774DAD /* bcell-Heart-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B823E8B117F5603C00774DAD /* bcell-Heart-selected.png */; };
-		B823E8B417F5603C00774DAD /* bcell-Heart-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B823E8B217F5603C00774DAD /* bcell-Heart-selected@2x.png */; };
+		B894BBF01807AA2B00F66442 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B894BBEF1807AA2B00F66442 /* SystemConfiguration.framework */; };
+		B894BBF21807AA3500F66442 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B894BBF11807AA3500F66442 /* MobileCoreServices.framework */; };
+		B894BBF51807AAFF00F66442 /* MeetupAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B894BBF41807AAFF00F66442 /* MeetupAPIClient.m */; };
+		B894BBF81807AB3100F66442 /* Event+NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B894BBF71807AB3100F66442 /* Event+NetworkHelper.m */; };
+		B894BBFC1807AB6A00F66442 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = B894BBFB1807AB6A00F66442 /* Event.m */; };
+		B894BC001807AB9E00F66442 /* DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B894BBFF1807AB9E00F66442 /* DateHelper.m */; };
+		B894BC031807ABAE00F66442 /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B894BC021807ABAE00F66442 /* DataStore.m */; };
+		B894BC0A1807ABE700F66442 /* EventsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B894BC051807ABE700F66442 /* EventsListViewController.m */; };
+		B894BC0B1807ABE700F66442 /* EventsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B894BC071807ABE700F66442 /* EventsTableViewCell.m */; };
+		B894BC0C1807ABE700F66442 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B894BC091807ABE700F66442 /* SearchViewController.m */; };
 		ECC3069CDD714F4DBE614376 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D53D34F62F374B00B4014CAA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +59,6 @@
 		B823E82617F4CE2900774DAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B823E82717F4CE2900774DAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B823E82A17F4CE2900774DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B823E82F17F4CE2900774DAD /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
-		B823E83017F4CE2900774DAD /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		B823E83217F4CE2900774DAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B823E83917F4CE2900774DAD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B823E84117F4CE2900774DAD /* MeetupExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeetupExampleTests-Info.plist"; sourceTree = "<group>"; };
@@ -74,27 +70,27 @@
 		B823E87217F4DA6700774DAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B823E87417F4DA6700774DAD /* MeetupExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetupExampleTests.m; sourceTree = "<group>"; };
 		B823E87617F4DA6700774DAD /* MeetupExampleTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MeetupExampleTests-Prefix.pch"; sourceTree = "<group>"; };
-		B823E88117F4E15D00774DAD /* MeetupAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetupAPIClient.h; sourceTree = "<group>"; };
-		B823E88217F4E15D00774DAD /* MeetupAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetupAPIClient.m; sourceTree = "<group>"; };
-		B823E88417F4EE1300774DAD /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		B823E88517F4EE1300774DAD /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
-		B823E88717F4F6B800774DAD /* EventsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsListViewController.h; sourceTree = "<group>"; };
-		B823E88817F4F6B800774DAD /* EventsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsListViewController.m; sourceTree = "<group>"; };
-		B823E88A17F4F77C00774DAD /* EventsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsTableViewCell.h; sourceTree = "<group>"; };
-		B823E88B17F4F77C00774DAD /* EventsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsTableViewCell.m; sourceTree = "<group>"; };
 		B823E88E17F4FFF000774DAD /* DateHelperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHelperTest.m; sourceTree = "<group>"; };
-		B823E89017F5000D00774DAD /* DateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateHelper.h; sourceTree = "<group>"; };
-		B823E89117F5000D00774DAD /* DateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHelper.m; sourceTree = "<group>"; };
-		B823E89A17F5209D00774DAD /* bcell-Heart-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bcell-Heart-back.png"; sourceTree = "<group>"; };
-		B823E89B17F5209D00774DAD /* bcell-Heart-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bcell-Heart-back@2x.png"; sourceTree = "<group>"; };
-		B823E8A217F525D500774DAD /* Event+NetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Event+NetworkHelper.h"; sourceTree = "<group>"; };
-		B823E8A317F525D500774DAD /* Event+NetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Event+NetworkHelper.m"; sourceTree = "<group>"; };
-		B823E8A717F53FF400774DAD /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
-		B823E8A817F53FF400774DAD /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
 		B823E8AA17F5417600774DAD /* DataStoreTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStoreTest.m; sourceTree = "<group>"; };
 		B823E8AC17F54E2200774DAD /* EventTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTest.m; sourceTree = "<group>"; };
-		B823E8B117F5603C00774DAD /* bcell-Heart-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bcell-Heart-selected.png"; sourceTree = "<group>"; };
-		B823E8B217F5603C00774DAD /* bcell-Heart-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bcell-Heart-selected@2x.png"; sourceTree = "<group>"; };
+		B894BBEF1807AA2B00F66442 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B894BBF11807AA3500F66442 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B894BBF31807AAFF00F66442 /* MeetupAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeetupAPIClient.h; path = network/MeetupAPIClient.h; sourceTree = "<group>"; };
+		B894BBF41807AAFF00F66442 /* MeetupAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeetupAPIClient.m; path = network/MeetupAPIClient.m; sourceTree = "<group>"; };
+		B894BBF61807AB3100F66442 /* Event+NetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Event+NetworkHelper.h"; path = "network/Event+NetworkHelper.h"; sourceTree = "<group>"; };
+		B894BBF71807AB3100F66442 /* Event+NetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Event+NetworkHelper.m"; path = "network/Event+NetworkHelper.m"; sourceTree = "<group>"; };
+		B894BBFA1807AB6A00F66442 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = model/Event.h; sourceTree = "<group>"; };
+		B894BBFB1807AB6A00F66442 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = model/Event.m; sourceTree = "<group>"; };
+		B894BBFE1807AB9E00F66442 /* DateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateHelper.h; sourceTree = "<group>"; };
+		B894BBFF1807AB9E00F66442 /* DateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHelper.m; sourceTree = "<group>"; };
+		B894BC011807ABAE00F66442 /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataStore.h; path = system/DataStore.h; sourceTree = "<group>"; };
+		B894BC021807ABAE00F66442 /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataStore.m; path = system/DataStore.m; sourceTree = "<group>"; };
+		B894BC041807ABE700F66442 /* EventsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventsListViewController.h; path = views/EventsListViewController.h; sourceTree = "<group>"; };
+		B894BC051807ABE700F66442 /* EventsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsListViewController.m; path = views/EventsListViewController.m; sourceTree = "<group>"; };
+		B894BC061807ABE700F66442 /* EventsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventsTableViewCell.h; path = views/EventsTableViewCell.h; sourceTree = "<group>"; };
+		B894BC071807ABE700F66442 /* EventsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsTableViewCell.m; path = views/EventsTableViewCell.m; sourceTree = "<group>"; };
+		B894BC081807ABE700F66442 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchViewController.h; path = views/SearchViewController.h; sourceTree = "<group>"; };
+		B894BC091807ABE700F66442 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchViewController.m; path = views/SearchViewController.m; sourceTree = "<group>"; };
 		D53D34F62F374B00B4014CAA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B894BBF21807AA3500F66442 /* MobileCoreServices.framework in Frameworks */,
+				B894BBF01807AA2B00F66442 /* SystemConfiguration.framework in Frameworks */,
 				B823E81A17F4CE2900774DAD /* CoreGraphics.framework in Frameworks */,
 				B823E81C17F4CE2900774DAD /* UIKit.framework in Frameworks */,
 				B823E81817F4CE2900774DAD /* Foundation.framework in Frameworks */,
@@ -147,6 +145,8 @@
 		B823E81617F4CE2900774DAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B894BBF11807AA3500F66442 /* MobileCoreServices.framework */,
+				B894BBEF1807AA2B00F66442 /* SystemConfiguration.framework */,
 				B823E85917F4D6D400774DAD /* CoreLocation.framework */,
 				B823E81717F4CE2900774DAD /* Foundation.framework */,
 				B823E81917F4CE2900774DAD /* CoreGraphics.framework */,
@@ -163,7 +163,8 @@
 			children = (
 				B823E82617F4CE2900774DAD /* AppDelegate.h */,
 				B823E82717F4CE2900774DAD /* AppDelegate.m */,
-				B823E85F17F4D84700774DAD /* helpers */,
+				B894BBFD1807AB9E00F66442 /* utils */,
+				B894BBF91807AB5400F66442 /* system */,
 				B823E85117F4D50F00774DAD /* network */,
 				B823E85017F4D48B00774DAD /* model */,
 				B823E84F17F4D47E00774DAD /* views */,
@@ -176,10 +177,6 @@
 		B823E81E17F4CE2900774DAD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B823E89A17F5209D00774DAD /* bcell-Heart-back.png */,
-				B823E89B17F5209D00774DAD /* bcell-Heart-back@2x.png */,
-				B823E8B117F5603C00774DAD /* bcell-Heart-selected.png */,
-				B823E8B217F5603C00774DAD /* bcell-Heart-selected@2x.png */,
 				B823E81F17F4CE2900774DAD /* MeetupExample-Info.plist */,
 				B823E82017F4CE2900774DAD /* InfoPlist.strings */,
 				B823E82317F4CE2900774DAD /* main.m */,
@@ -212,8 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				B823E82917F4CE2900774DAD /* Main.storyboard */,
-				B823E8A617F53AEC00774DAD /* common */,
-				B823E88D17F4F78100774DAD /* upcoming */,
+				B823E88D17F4F78100774DAD /* events */,
 				B823E8A517F531DF00774DAD /* search */,
 			);
 			name = views;
@@ -222,12 +218,8 @@
 		B823E85017F4D48B00774DAD /* model */ = {
 			isa = PBXGroup;
 			children = (
-				B823E8A717F53FF400774DAD /* DataStore.h */,
-				B823E8A817F53FF400774DAD /* DataStore.m */,
-				B823E88417F4EE1300774DAD /* Event.h */,
-				B823E88517F4EE1300774DAD /* Event.m */,
-				B823E8A217F525D500774DAD /* Event+NetworkHelper.h */,
-				B823E8A317F525D500774DAD /* Event+NetworkHelper.m */,
+				B894BBFA1807AB6A00F66442 /* Event.h */,
+				B894BBFB1807AB6A00F66442 /* Event.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -235,19 +227,12 @@
 		B823E85117F4D50F00774DAD /* network */ = {
 			isa = PBXGroup;
 			children = (
-				B823E88117F4E15D00774DAD /* MeetupAPIClient.h */,
-				B823E88217F4E15D00774DAD /* MeetupAPIClient.m */,
+				B894BBF61807AB3100F66442 /* Event+NetworkHelper.h */,
+				B894BBF71807AB3100F66442 /* Event+NetworkHelper.m */,
+				B894BBF31807AAFF00F66442 /* MeetupAPIClient.h */,
+				B894BBF41807AAFF00F66442 /* MeetupAPIClient.m */,
 			);
 			name = network;
-			sourceTree = "<group>";
-		};
-		B823E85F17F4D84700774DAD /* helpers */ = {
-			isa = PBXGroup;
-			children = (
-				B823E89017F5000D00774DAD /* DateHelper.h */,
-				B823E89117F5000D00774DAD /* DateHelper.m */,
-			);
-			name = helpers;
 			sourceTree = "<group>";
 		};
 		B823E86E17F4DA6700774DAD /* MeetupExampleTests */ = {
@@ -269,31 +254,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B823E88D17F4F78100774DAD /* upcoming */ = {
+		B823E88D17F4F78100774DAD /* events */ = {
 			isa = PBXGroup;
 			children = (
-				B823E88717F4F6B800774DAD /* EventsListViewController.h */,
-				B823E88817F4F6B800774DAD /* EventsListViewController.m */,
+				B894BC041807ABE700F66442 /* EventsListViewController.h */,
+				B894BC051807ABE700F66442 /* EventsListViewController.m */,
+				B894BC061807ABE700F66442 /* EventsTableViewCell.h */,
+				B894BC071807ABE700F66442 /* EventsTableViewCell.m */,
 			);
-			name = upcoming;
+			name = events;
 			sourceTree = "<group>";
 		};
 		B823E8A517F531DF00774DAD /* search */ = {
 			isa = PBXGroup;
 			children = (
-				B823E82F17F4CE2900774DAD /* SearchViewController.h */,
-				B823E83017F4CE2900774DAD /* SearchViewController.m */,
+				B894BC081807ABE700F66442 /* SearchViewController.h */,
+				B894BC091807ABE700F66442 /* SearchViewController.m */,
 			);
 			name = search;
 			sourceTree = "<group>";
 		};
-		B823E8A617F53AEC00774DAD /* common */ = {
+		B894BBF91807AB5400F66442 /* system */ = {
 			isa = PBXGroup;
 			children = (
-				B823E88A17F4F77C00774DAD /* EventsTableViewCell.h */,
-				B823E88B17F4F77C00774DAD /* EventsTableViewCell.m */,
+				B894BC011807ABAE00F66442 /* DataStore.h */,
+				B894BC021807ABAE00F66442 /* DataStore.m */,
 			);
-			name = common;
+			name = system;
+			sourceTree = "<group>";
+		};
+		B894BBFD1807AB9E00F66442 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				B894BBFE1807AB9E00F66442 /* DateHelper.h */,
+				B894BBFF1807AB9E00F66442 /* DateHelper.m */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,12 +371,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B823E83317F4CE2900774DAD /* Images.xcassets in Resources */,
-				B823E89C17F5209D00774DAD /* bcell-Heart-back.png in Resources */,
 				B823E82217F4CE2900774DAD /* InfoPlist.strings in Resources */,
 				B823E82B17F4CE2900774DAD /* Main.storyboard in Resources */,
-				B823E8B317F5603C00774DAD /* bcell-Heart-selected.png in Resources */,
-				B823E8B417F5603C00774DAD /* bcell-Heart-selected@2x.png in Resources */,
-				B823E89D17F5209D00774DAD /* bcell-Heart-back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,16 +424,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B823E88617F4EE1300774DAD /* Event.m in Sources */,
-				B823E88917F4F6B800774DAD /* EventsListViewController.m in Sources */,
-				B823E83117F4CE2900774DAD /* SearchViewController.m in Sources */,
-				B823E88C17F4F77C00774DAD /* EventsTableViewCell.m in Sources */,
+				B894BBFC1807AB6A00F66442 /* Event.m in Sources */,
+				B894BC0C1807ABE700F66442 /* SearchViewController.m in Sources */,
+				B894BC0A1807ABE700F66442 /* EventsListViewController.m in Sources */,
+				B894BC031807ABAE00F66442 /* DataStore.m in Sources */,
+				B894BC001807AB9E00F66442 /* DateHelper.m in Sources */,
 				B823E82817F4CE2900774DAD /* AppDelegate.m in Sources */,
-				B823E89217F5000D00774DAD /* DateHelper.m in Sources */,
-				B823E8A417F525D500774DAD /* Event+NetworkHelper.m in Sources */,
+				B894BC0B1807ABE700F66442 /* EventsTableViewCell.m in Sources */,
+				B894BBF51807AAFF00F66442 /* MeetupAPIClient.m in Sources */,
+				B894BBF81807AB3100F66442 /* Event+NetworkHelper.m in Sources */,
 				B823E82417F4CE2900774DAD /* main.m in Sources */,
-				B823E88317F4E15D00774DAD /* MeetupAPIClient.m in Sources */,
-				B823E8A917F53FF400774DAD /* DataStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
