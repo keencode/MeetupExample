@@ -13,7 +13,6 @@
 		B823E82217F4CE2900774DAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B823E82017F4CE2900774DAD /* InfoPlist.strings */; };
 		B823E82417F4CE2900774DAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E82317F4CE2900774DAD /* main.m */; };
 		B823E82817F4CE2900774DAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B823E82717F4CE2900774DAD /* AppDelegate.m */; };
-		B823E82B17F4CE2900774DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B823E82917F4CE2900774DAD /* Main.storyboard */; };
 		B823E83317F4CE2900774DAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B823E83217F4CE2900774DAD /* Images.xcassets */; };
 		B823E86B17F4DA6700774DAD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823E86A17F4DA6700774DAD /* SenTestingKit.framework */; };
 		B823E86C17F4DA6700774DAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823E81717F4CE2900774DAD /* Foundation.framework */; };
@@ -33,6 +32,7 @@
 		B894BC0A1807ABE700F66442 /* EventsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B894BC051807ABE700F66442 /* EventsListViewController.m */; };
 		B894BC0B1807ABE700F66442 /* EventsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B894BC071807ABE700F66442 /* EventsTableViewCell.m */; };
 		B894BC0C1807ABE700F66442 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B894BC091807ABE700F66442 /* SearchViewController.m */; };
+		B894BC121807ACFC00F66442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B894BC101807ACFC00F66442 /* Main.storyboard */; };
 		ECC3069CDD714F4DBE614376 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D53D34F62F374B00B4014CAA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +58,6 @@
 		B823E82517F4CE2900774DAD /* MeetupExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MeetupExample-Prefix.pch"; sourceTree = "<group>"; };
 		B823E82617F4CE2900774DAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B823E82717F4CE2900774DAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B823E82A17F4CE2900774DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B823E83217F4CE2900774DAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B823E83917F4CE2900774DAD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B823E84117F4CE2900774DAD /* MeetupExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeetupExampleTests-Info.plist"; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		B894BC071807ABE700F66442 /* EventsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsTableViewCell.m; path = views/EventsTableViewCell.m; sourceTree = "<group>"; };
 		B894BC081807ABE700F66442 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchViewController.h; path = views/SearchViewController.h; sourceTree = "<group>"; };
 		B894BC091807ABE700F66442 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchViewController.m; path = views/SearchViewController.m; sourceTree = "<group>"; };
+		B894BC111807ACFC00F66442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D53D34F62F374B00B4014CAA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -208,7 +208,7 @@
 		B823E84F17F4D47E00774DAD /* views */ = {
 			isa = PBXGroup;
 			children = (
-				B823E82917F4CE2900774DAD /* Main.storyboard */,
+				B894BC101807ACFC00F66442 /* Main.storyboard */,
 				B823E88D17F4F78100774DAD /* events */,
 				B823E8A517F531DF00774DAD /* search */,
 			);
@@ -370,9 +370,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B894BC121807ACFC00F66442 /* Main.storyboard in Resources */,
 				B823E83317F4CE2900774DAD /* Images.xcassets in Resources */,
 				B823E82217F4CE2900774DAD /* InfoPlist.strings in Resources */,
-				B823E82B17F4CE2900774DAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,14 +467,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		B823E82917F4CE2900774DAD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B823E82A17F4CE2900774DAD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B823E84217F4CE2900774DAD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -489,6 +481,14 @@
 				B823E87217F4DA6700774DAD /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B894BC101807ACFC00F66442 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B894BC111807ACFC00F66442 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
